@@ -1,0 +1,13 @@
+<h1>입력한 텍스트는 {{num}} 단어로 구성되어 있습니다.</h1>
+
+<h1>입력한 텍스트: {{total_text}}</h1>
+
+<h1>단어 카운트:
+     <!--wordcount : dict_items([('안녕', 1), ('하이요', 1)])]  -->
+{% for key, value in wordcount %}
+{{key}} : {{value}}
+{% endfor %}
+</h1>
+
+
+<a href="{% url 'main' %}"> 다시하기 </a>
